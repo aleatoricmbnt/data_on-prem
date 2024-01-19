@@ -46,7 +46,7 @@ resource "scalr_workspace" "report_ws" {
   count = 21
   environment_id = scalr_environment.report_env[count.index].id
 
-  name              = "REPORTS_module_ws_${count.index}"
+  name              = "REPORTS_module_ws-upd_${count.index}"
   module_version_id = data.scalr_module_version.report_get_modver_id[count.index].id
 }
 
